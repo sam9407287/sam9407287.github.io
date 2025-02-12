@@ -250,22 +250,55 @@ nav ul {
 
 /* Responsive image sizes with higher quality maintained */
 @media (max-width: 768px) {
-    .skills-categories {
-        grid-template-columns: 1fr;
+    .container {
+        width: 95%;  /* Increase container width on mobile */
     }
-    
+
     .profile-pic {
-        width: 200px;    /* Tablet size */
-        height: auto;
-        object-fit: cover;
+        width: 150px;    /* Mobile size */
+        height: auto;    /* Maintain aspect ratio */
+    }
+
+    header nav {
+        float: none;     /* Stack navigation vertically */
+        text-align: center;
+        width: 100%;
+    }
+
+    header li {
+        float: none;     /* Stack menu items vertically */
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .social-links {
+        margin: 15px 0;  /* Adjust spacing */
+    }
+
+    .social-links a {
+        font-size: 20px;  /* Slightly smaller icons */
+        margin: 0 8px;    /* Reduce spacing between icons */
+    }
+
+    .skills-categories {
+        grid-template-columns: 1fr;  /* Single column for skills */
+        width: 100%;
     }
 }
 
+/* Tablet Adjustments */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .profile-pic {
+        width: 180px;    /* Medium size for tablet */
+        height: auto;    /* Maintain aspect ratio */
+    }
+}
+
+/* Desktop */
 @media (min-width: 1024px) {
     .profile-pic {
         width: 240px;    /* Desktop size */
-        height: auto;
-        object-fit: cover;
+        height: auto;    /* Maintain aspect ratio */
     }
 }
 
