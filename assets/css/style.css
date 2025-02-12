@@ -465,3 +465,20 @@ footer {
         margin: 20px;
     }
 }
+
+/* About Section */
+#about p {
+    max-width: 800px;         /* Limit line length for better readability */
+    margin: 0 auto;           /* Center the paragraph */
+    line-height: 1.8;         /* Increase line spacing for better readability */
+    text-align: justify;      /* Justify text for cleaner appearance */
+    padding: 0 20px;          /* Add some padding on mobile */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    #about p {
+        text-align: left;     /* Left align on mobile for better readability */
+        line-height: 1.6;     /* Slightly reduce line height on mobile */
+    }
+}
